@@ -1,0 +1,29 @@
+.display-flex {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+
+@media (min-width: 1200px) {
+
+    .side-bar-close {
+        display: none !important;
+    }
+
+}
+
+@media (max-height: 670px) {
+    .side-bar button {
+        padding: 4px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .MuiDrawer-paper {
+        margin-top: 55px !important;
+    }
+
+}

@@ -1,0 +1,49 @@
+.right-side-bar {
+    flex-direction: column;
+    width: 100%;
+    flex-flow: wrap;
+    display: flex;
+    align-items: center;
+
+    .card {
+        margin-bottom: 10px;
+    }
+
+    .card:last-child {
+        .bottom-text {
+            display: none;
+        }
+
+        margin-bottom: 0;
+        overflow: hidden;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .right-side-bar {
+        flex-direction: row;
+        flex-flow: nowrap;
+        text-align: center;
+
+        svg {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+
+}
+
+@media (max-width: 1200px) {
+    .right-side-bar {
+        flex-flow: nowrap;
+        align-items: stretch;
+
+        .card:last-child {
+            padding: 30px;
+            margin-bottom: 10px;
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.bottom-text {
+    position: absolute;
+    bottom: 1%;
+    left: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.user-profile {
+    width: 100%;
+    background-color: #0B2447;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.profile-avatar {
+    margin-left: 15px;
+}
+
+.user-name {
+    width: 30%;
+}
+
+.user-detail {
+    width: 30%;
+}
+
+.profile-setting {
+    width: 30%;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+
+    .card {
+        padding: 10px;
+    }
+
+    .card:last-child {
+        padding: 10px !important;
+    }
+
+    .bottom-text {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .card {
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    .card {
+        p {
+            font-size: 10px;
+        }
+    }
+}
+
+
+
+@media (max-width: 700px) {
+
+    .user-detail {
+        display: none;
+    }
+
+    .user-name {
+        width: 45%;
+    }
+
+
+    .profile-setting {
+        width: 45%;
+    }
+}

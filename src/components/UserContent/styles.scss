@@ -1,0 +1,23 @@
+.users-icon {
+    margin-left: 3%;
+}
+
+.user-content {
+    padding: 20px 10px 32px 10px;
+}
+
+@media (max-width: 600px) {
+    .user-content {
+        p {
+            font-size: 10px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .user-content {
+        p {
+            font-size: 12px;
+        }
+    }
+}
